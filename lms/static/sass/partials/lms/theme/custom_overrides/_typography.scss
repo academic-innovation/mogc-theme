@@ -5,14 +5,16 @@ body {
   font-size: 100%;
 }
 
-.h1 { font-family: $avenir-book;   font-size: 2rem;    }
-.h2 { font-family: $avenir-medium; font-size: 1.6rem;  }
-.h3 { font-family: $avenir-medium; font-size: 1.25rem; }
-.h4 { font-family: $avenir-medium; font-size: 1.1rem; }
+.h1 { font-family: $avenir-book;   font-size: 2rem; color: $umblue;    }
+.h2 { font-family: $avenir-medium; font-size: 1.6rem; color: $umblue;  }
+.h3 { font-family: $avenir-medium; font-size: 1.25rem; color: $umblue; }
+.h4 { font-family: $avenir-medium; font-size: 1.1rem; color: $umblue; }
 .p {
   font-size: 1rem;
+  font-family: $avenir-book;
   line-height: 1.6rem;
   margin-block-end: 1em;
+  color: inherit;
 }
 .h1, .h2, .h3, .h4, .p { font-weight: normal; }
 

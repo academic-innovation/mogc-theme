@@ -2,18 +2,18 @@
 @import '_functions.scss';
 
 // main variable overrides
-// $black: $stanford-black;
+$black: $umblue;
 // $white: $stanford-white;
-$gray: $lightgray;
+$gray: $darkgray;
 $yellow: $maize;
 // $red: $bright-red;
 // $green: $mint;
-// $blue: $sky;
+$blue: $umblue;
 // $orange: $sun;
 
 // Colors - Bootstrap
 $primary:       $umblue;
-$secondary:     shaded($umblue, 50%);
+$secondary:     $slate-dark;
 // $inverse:       tinted($light-sage, 60%);
 // $disabled:      $stone;
 // $success:       $mint;
@@ -23,9 +23,9 @@ $secondary:     shaded($umblue, 50%);
 // $purchase:      $mint;
 // $lightest:      $fog;
 // $light:         shaded($fog, 25%);
-// $dark:          $warm-gray;
-// $darker:        shaded($warm-gray, 50%);
-// $darkest:       shaded($warm-gray, 75%);
+$dark:          $umblue;
+$darker:        $umblue;
+$darkest:       $umblue;
 // $status:        $redwood;
 
 @import '_derived.scss';

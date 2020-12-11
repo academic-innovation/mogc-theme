@@ -6,3 +6,29 @@
   font-size: .9rem;
   letter-spacing: .1rem;
 }
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register {
+  background-image: none;
+  border-radius: 40px;
+  padding: .5rem 1rem;
+  font-family: $avenir-heavy;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+}
+
+// .btn-primary {
+//   &:hover {
+//     background-color: $slate-dark;
+//     border-color: $slate-dark;
+//   }
+// }
+
+// #expand-collapse-outline-all-button {
+//   &:hover { color: $slate-dark; }
+// }
+
+// button.accordion-trigger,
+// button.accordion-trigger .fa {
+//   color: $umblue;
+// }
