@@ -5,5 +5,4 @@ from django.utils.translation import ugettext as _
 from openedx.core.djangolib.markup import HTML, Text
 %>
 
-<h1>${Text(_(u"Welcome to the Platform Name that I can't override: {platform_name}")).format(platform_name=settings.PLATFORM_NAME)}</h1>
-<p>${Text(_("Custom subheader text that Nathan added!!!")).format(registered_trademark=HTML)}</p>
+<h1>${Text(_(u"Welcome to {platform_name}")).format(platform_name=settings.PLATFORM_NAME)}</h1>
