@@ -21,6 +21,9 @@ course_mode_class = course_mode if course_mode else ''
             <div class="wrapper-statement-and-signatories">
                 <div class="accomplishment-statement">
                     <p class="accomplishment-statement-lead">
+                        % if accomplishment_preamble:
+                        <span class="accomplishment-summary copy copy-lead">${accomplishment_preamble}</span>
+                        % endif
                         <strong class="accomplishment-recipient hd-1 emphasized">${accomplishment_copy_name}</strong>
                         <span class="accomplishment-summary copy copy-lead">${accomplishment_copy_description_full}</span>
 
@@ -32,6 +35,10 @@ course_mode_class = course_mode if course_mode else ''
                     </p>
 
                     <p class="accomplishment-statement-detail copy copy-lead">${accomplishment_copy_course_description}</p>
+
+                    % if display_date:
+                    <p class="copy copy-lead">${certificate_date_issued_title} ${certificate_date_issued}</p>
+                    % endif
                 </div>
 
                 % if mode != 'base':
@@ -78,6 +85,14 @@ course_mode_class = course_mode if course_mode else ''
                         </div>
                     </li>
                     % endif
+
+                    % for partner_logo in (partner_logos or []):
+                    <li class="wrapper-organization">
+                        <div class="organization">
+                            <img class="organization-logo" src="${partner_logo['src']}" alt="${partner_logo['alt']}">
+                        </div>
+                    </li>
+                    % endfor
                 </ul>
             </div>
         </div>
