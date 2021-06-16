@@ -85,6 +85,14 @@ course_mode_class = course_mode if course_mode else ''
                         </div>
                     </li>
                     % endif
+
+                    % for partner_logo in (partner_logos or []):
+                    <li class="wrapper-organization">
+                        <div class="organization">
+                            <img class="organization-logo" src="${partner_logo['src']}" alt="${partner_logo['alt']}">
+                        </div>
+                    </li>
+                    % endfor
                 </ul>
             </div>
         </div>
