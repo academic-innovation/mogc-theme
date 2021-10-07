@@ -14,6 +14,13 @@
 <%block name="js_extra">
     <%static:require_module module_name="js/student_account/logistration_factory" class_name="LogistrationFactory">
         var options = ${data | n, dump_js_escaped_json};
+
+        // Email marketing checkbox should appear with required fields.
+        var emailOptInIndex = options.registration_form_desc.fields.map(field => field.name).indexOf('email_opt_in');
+        if (emailOptInIndex >= 0) {
+            options.registration_form_desc.fields[emailOptInIndex].required = true;
+        }
+
         LogistrationFactory(options);
         if ('newrelic' in window) {
             newrelic.finished();
@@ -22,6 +29,12 @@
             // the same thing. We still want newrelic.finished() for session
             // traces though.
             newrelic.addPageAction('xfinished');
+        }
+
+        // Email marketing checkbox should not actually be required to submit the form.
+        var emailOptInEl = document.querySelector('input#register-email_opt_in');
+        if (emailOptInEl) {
+            emailOptInEl.removeAttribute('required');
         }
     </%static:require_module>
     % if configuration_helpers.get_value('DISPLAY_TOS_IN_MODAL_ON_REGISTRATION_PAGE', False):
