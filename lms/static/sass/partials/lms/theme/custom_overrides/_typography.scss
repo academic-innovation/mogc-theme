@@ -28,3 +28,11 @@ p  { @extend .p;  }
     font-size: .9rem;
     line-height: 1.2rem;
 }
+
+a {
+  font-size: inherit;
+  font-weight: normal;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline !important;
+}
