@@ -29,10 +29,45 @@ p  { @extend .p;  }
     line-height: 1.2rem;
 }
 
-a {
-  font-size: inherit;
-  font-weight: normal;
-  color: inherit;
-  cursor: pointer;
-  text-decoration: underline !important;
+
+p {
+  a:not(.btn),
+  a:visited:not(.btn) {
+    color: $link-color;
+    font: inherit;
+    font-weight: inherit;
+    text-decoration: underline;
+
+    @include transition(all 0.1s linear 0s);
+
+    &:hover,
+    &:focus {
+      color: $link-hover;
+      text-decoration: underline;
+    }
+  }
+}
+
+a:not(.btn),
+a:visited:not(.btn) {
+  color: $link-color;
+  font: inherit;
+  text-decoration: underline;
+
+  @include transition(all 0.1s linear 0s);
+
+  &:hover,
+  &:focus {
+    color: $link-hover;
+    text-decoration: underline;
+  }
+
+  &:disabled,
+  &.is-disabled,
+  &.disabled {
+    @extend %ui-disabled;
+
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }
