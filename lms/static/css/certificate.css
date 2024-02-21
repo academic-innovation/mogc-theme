@@ -1,0 +1,48 @@
+
+.certificate {}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+}
+.organization-logo {}
+
+.date-issued {
+    font-size: 18pt;
+    font-weight: 400;
+    color: #333;
+    font-family: sans-serif;
+}
+
+h1.recipient {
+    font-size: 32pt;
+}
+
+.header-right {}
+
+.intro {
+    font-family: sans-serif;
+}
+
+.subheading {
+    font-size: 18pt;
+    color: #666;
+}
+
+.course-list {
+    font-size: 16pt;
+    color: #666;
+        }
+
+section.signatures {
+    .signatory {}
+    .signatory-signature {}
+    .signatory-credentials {}
+}
+
+.footnote {
+    
+}
