@@ -1,39 +1,65 @@
 
-.certificate {}
 header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .header-left {
-    display: flex;
+    width: 75%;
 }
-.organization-logo {}
+.header-left .row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 30px;
+}
+.header-right {
+    width: 25%;
+}
+.logo-small {
+    width: 175px;
+}
+.logo-large {
+    width: 150px;
+}
+.logo-small img, .logo-large img {
+    width: 100%;
+}
 
 .date-issued {
-    font-size: 18pt;
-    font-weight: 400;
+    font-size: 14pt;
+    font-weight: 600;
     color: #333;
     font-family: sans-serif;
+    align-items: center;
 }
 
-h1.recipient {
-    font-size: 32pt;
+h1.recipient-name {
+    font-size: 36pt;
+    margin-bottom: 10px;
+    font-family: serif;
 }
 
-.header-right {}
-
-.intro {
+.content {
+    margin-top: 0;
+}
+h3.intro {
+    margin-top: 0;
+    font-size: 12pt;
+    font-weight: 300;
     font-family: sans-serif;
 }
 
-.subheading {
-    font-size: 18pt;
+h2.heading {
+    font-size: 24pt;
+    margin-top: 30px;
     color: #666;
+    font-family: serif;
 }
 
 .course-list {
-    font-size: 16pt;
+    font-size: 22pt;
     color: #666;
         }
 
@@ -44,5 +70,5 @@ section.signatures {
 }
 
 .footnote {
-    
+    font-size: 8pt;
 }
