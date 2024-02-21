@@ -1,60 +1,122 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.header-app {
+    .logo {
+        width: fit-content;
+    }
+
+    .logo-img {
+        display: block;
+        width: auto;
+        height: 30px;
+    }
+}
+
+.wrapper-banner-user {
+    background: #00264b;
+
+    .message-block {
+        text-align: center;
+        font-weight: 300;
+    }
+}
+
+.banner-user {
+    .wrapper-copy-and-actions {
+        justify-content: center;
+    }
+}
+
+.accomplishment-main {
+    background: none !important;
+}
+
+.accomplishment-rendering {
+    padding: 2rem;
+    border: none;
+    box-shadow: 1px 1px 10px #b1becb;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
 }
 
 .header-left {
     width: 75%;
+
+    .row {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
 }
-.header-left .row {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-right: 30px;
-}
+
 .header-right {
     width: 25%;
 }
+
 .logo-small {
-    width: 175px;
+    min-width: 200px;
+    width: 30%; 
+    margin-right: 5rem;
 }
+
 .logo-large {
-    width: 150px;
+    margin-top: -1rem;
+
+    img {
+        display: block; 
+        height: 200px;
+    }
 }
-.logo-small img, .logo-large img {
+
+.logo-small img, 
+.logo-large img {
     width: 100%;
 }
 
+.recipient {
+    margin-top: 3rem;
+}
+
 .date-issued {
-    font-size: 14pt;
+    font-size: 1.25rem;
     font-weight: 600;
-    color: #333;
-    font-family: sans-serif;
+    color: #b1becb;
+    font-family: 'Helvetica', sans-serif;
     align-items: center;
 }
 
 h1.recipient-name {
-    font-size: 36pt;
-    margin-bottom: 10px;
-    font-family: serif;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    margin-bottom: 0;
+    color: #00264b;
 }
 
 .content {
-    margin-top: 0;
+    margin: 0 0 4rem 0;
+    width: 100%;
 }
+
 h3.intro {
     margin-top: 0;
-    font-size: 12pt;
+    font-size: 1.25rem;
     font-weight: 300;
-    font-family: sans-serif;
+    font-family: 'Helvetica', sans-serif;
+    color: #5B7793;
 }
 
 h2.heading {
-    font-size: 24pt;
-    margin-top: 30px;
-    color: #666;
-    font-family: serif;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin-top: 3rem;
+    color: #5B7793;
 }
 
 .course-list {
@@ -63,11 +125,33 @@ h2.heading {
         }
 
 section.signatures {
-    .signatory {}
-    .signatory-signature {}
-    .signatory-credentials {}
+    width: 100%;
+    font-family: 'Helvetica', sans-serif;
+
+    .signatory-signature {
+        display: block;
+        width: 300px;
+        height: auto;
+    }
+
+    .signatory-name {
+        color: #5B7793;
+    }
+
+    .signatory-credentials {
+        font-size: .9rem;
+        color: #00264b;
+        max-width: 300px;
+    }
+
+    .organization {
+        color: #5B7793;
+    }
 }
 
 .footnote {
-    font-size: 8pt;
+    font-size: .8rem;
+    font-style: italic;
+    color: #5B7793;
+    margin-top: 3rem;
 }
