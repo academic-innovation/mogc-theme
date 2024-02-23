@@ -54,6 +54,8 @@
 
 .header-right {
     width: 25%;
+    justify-content: end;
+    display: flex;
 }
 
 .logo-small {
@@ -64,6 +66,7 @@
 
 .logo-large {
     margin-top: -1rem;
+    max-width: 200px;
 
     img {
         display: block; 
