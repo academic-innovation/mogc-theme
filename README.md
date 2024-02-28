@@ -2,7 +2,7 @@
 - Clone repository within the `/tutor_root/env/build/openedx/themes` project directory
 
 ### Setting Legacy Theme as Site Theme
-- To access the LMS Admin [http://local.overhang.io:8000admin/](http://local.overhang.io:8000/admin/)
+- To access the LMS Admin [http://local.overhang.io:8000/admin/](http://local.overhang.io:8000/admin/)
 - Add Site Theme
 - Choose URL from dropdown
 - Theming -> Site Themes
