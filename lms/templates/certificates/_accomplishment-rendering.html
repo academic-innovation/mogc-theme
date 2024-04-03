@@ -39,20 +39,7 @@ footer_text = 'This certificate does not confer or affirm status as a student or
             <section class="content">
                 <h3 class="intro">${accomplishment_copy_description_full}</h3>
         
-                % if is_mastertrack:
-                    <h3 class="subheading">MasterTrack Certificate</h3>
-                % endif
                 <h2 class="heading">${accomplishment_copy_course_name}</h2>
-        
-                % if is_series:
-                <div class="course-list">
-                    <ul>
-                        % for course in course_list:
-                            <li></li>
-                        % endfor
-                    </ul>
-                </div>
-                % endif
             </section>
             % if certificate_data:
                 <section class="signatures">
