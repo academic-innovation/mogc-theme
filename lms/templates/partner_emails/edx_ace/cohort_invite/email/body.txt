@@ -1,0 +1,19 @@
+Dear {{ user.name }},
+
+We are excited to inform you that you have been successfully enrolled in {{ cohort.name }} allowing you to take certain Michigan Online courses in partnership with {{ partner.name }}.
+
+Next Steps:
+Please log in to your Michigan Online learning account using the email address this invite was sent to and start exploring your course materials.
+
+Log in to Your Cohort: https://apps.learn.online.umich.edu/partners/{{ partner.slug }}
+
+Important Note:
+You must be at least 13 years old to access Michigan Online. If you are a minor (under the age of 18), you must obtain approval from a parent or guardian before creating an account. By creating an account as a minor, you are representing that you have first obtained such approval and that a parent or guardian agrees you may be bound by Michigan Online’s terms of service (https://learn.online.umich.edu/tos).
+
+Additional Resources:
+For support and assistance, please visit our Contact Page: https://online.umich.edu/contact/.
+
+Welcome to Michigan Online - let’s get started!
+
+Best regards,  
+The Michigan Online Team
