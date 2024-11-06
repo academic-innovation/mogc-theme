@@ -10,3 +10,7 @@
 @import 'custom_overrides/_buttons.scss';
 @import 'custom_overrides/_header.scss';
 @import 'custom_overrides/_footer.scss';
+
+.dropdown-user-menu {
+    z-index: 11;
+}
