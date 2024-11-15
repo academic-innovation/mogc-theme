@@ -2,6 +2,14 @@
 
 <%namespace name='static' file='/static_content.html'/>
 
+<%block name="js_extra">
+  <script>
+    var nav = document.querySelector("nav.nav-links");
+    var links = nav.querySelectorAll("a");
+    links.forEach(link => link.classList.add("tab-nav-link"));
+  </script>
+</%block>
+
 
 <span class="campus-buildings"></span>
 <footer class="m-footer">

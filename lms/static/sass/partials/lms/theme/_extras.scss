@@ -10,3 +10,26 @@
 @import 'custom_overrides/_buttons.scss';
 @import 'custom_overrides/_header.scss';
 @import 'custom_overrides/_footer.scss';
+
+.dropdown-user-menu {
+    z-index: 11 !important;
+}
+
+// Copied from edx-platform to correct discrepancy between authenticated and
+// non-authenticated headers, as well as with MFE header
+// Note: JS applies this class to nav items in `/templates/footer.html`
+.tab-nav-link {
+    font-size: em(16);
+    color: $gray;
+    padding: 5px 25px 23px;
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+
+    &:hover,
+    &:focus {
+        border-bottom: 4px solid $primary;
+    }
+}
+.global-header {
+    padding-bottom: 0;
+}
