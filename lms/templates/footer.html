@@ -2,6 +2,14 @@
 
 <%namespace name='static' file='/static_content.html'/>
 
+<%block name="js_extra">
+  <script>
+    var nav = document.querySelector("nav.nav-links");
+    var links = nav.querySelectorAll("a");
+    links.forEach(link => link.classList.add("tab-nav-link"));
+  </script>
+</%block>
+
 
 <span class="campus-buildings"></span>
 <footer class="m-footer">
@@ -12,6 +20,6 @@
     <span>Copyright &copy; 2023 The Regents of the University of Michigan</span> |
     <a href="/tos">Terms of Service</a> |
     <a href="/privacy">Privacy Policy</a> |
-    <a href="https://teamdynamix.umich.edu/TDClient/187/Portal/KB/ArticleDet?ID=10934">Accessibility</a>
+    <a href="https://teamdynamix.umich.edu/TDClient/227/Portal/KB/ArticleDet?ID=12035">Accessibility</a>
   </p>
 </footer>
